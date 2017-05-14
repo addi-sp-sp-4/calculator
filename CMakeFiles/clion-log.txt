@@ -1,4 +1,0 @@
-/usr/clion/clion-2017.1.1/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE= -G "CodeBlocks - Unix Makefiles" /home/david/code/c++/Calculator
--- Configuring done
--- Generating done
--- Build files have been written to: /home/david/code/c++/Calculator

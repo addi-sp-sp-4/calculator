@@ -1,3 +1,0 @@
-/home/david/code/c++/Calculator/CMakeFiles/rebuild_cache.dir
-/home/david/code/c++/Calculator/CMakeFiles/edit_cache.dir
-/home/david/code/c++/Calculator/CMakeFiles/Calculator.dir
