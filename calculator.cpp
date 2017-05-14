@@ -42,13 +42,13 @@ std::string Calculator::evaluate(std::string input)
 
     // Debugging block; uncomment to get postfix string
 
-
+    /*
     for(unsigned i = 0; i < postfix.size(); i++)
     {
         std::cout << postfix[i] << ",";
     }
     std::cout << std::endl;
-
+    */
 
     return result->evaluate(postfix);
 
