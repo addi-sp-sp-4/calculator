@@ -74,7 +74,7 @@ std::string PostfixEval::calculate(std::string oper, std::string x, std::string 
     else if(oper == "+") _z = _x + _y;
     else if(oper == "-") _z = _x - _y;
 
-    // Needs to be an int
+    
     else if(oper == "%") _z = fmod(_x, _y);
     else if(oper == "^") _z = pow(_x, _y);
 
