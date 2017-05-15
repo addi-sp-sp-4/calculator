@@ -13,8 +13,11 @@ class Infix2Postfix {
 
     public:
         Infix2Postfix();
-        std::vector<std::string> evaluate(std::string infix);
-        void example();
+        std::vector<std::string> evaluate(std::vector<std::string> infix);
+
+
+    private:
+        bool isoperand(std::string input);
 
 
 

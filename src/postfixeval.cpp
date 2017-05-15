@@ -30,7 +30,7 @@ std::string PostfixEval::evaluate(std::vector<std::string> postfix)
 
         // If current char is a digit: push current char to operands
         // The if statement is a check for if the string is a number
-        if(current_char.find_first_not_of("0123456789.") == std::string::npos)
+        if(current_char.find_first_not_of("0123456789.-") == std::string::npos)
         {
             operands.push(current_char);
 
@@ -43,6 +43,7 @@ std::string PostfixEval::evaluate(std::vector<std::string> postfix)
             // Get the two topmost chars from operands and store them in x and y respectively
             // Remember: the stack always has at least 2 numbers in it (1 when finished though!), so no need to check
             // for that
+
             std::string x = operands.top();
             operands.pop();
             std::string y = operands.top();
@@ -55,10 +56,14 @@ std::string PostfixEval::evaluate(std::vector<std::string> postfix)
             // Push result
             operands.push(result);
 
+
         }
     }
     // Return float of evaluated value
-    return operands.top();
+
+    std::string return_val = operands.top();
+
+    return return_val;
 }
 
 std::string PostfixEval::calculate(std::string oper, std::string x, std::string y)

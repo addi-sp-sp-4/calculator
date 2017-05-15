@@ -38,15 +38,21 @@ std::vector<std::string> Parser::parse(std::string unparsed)
         std::string current_char(1, unparsed[i]);
 
         // If current char is a digit
-        if(isdigit(unparsed[i]))
+        if(isdigit(unparsed[i]) || (i == 0 && current_char == "-"))
         {
             buffer += current_char;
         }
+
         else if(buffer.length() > 0 && current_char == ".")
         {
             buffer += current_char;
         }
-        else if(buffer.length() == 0 && current_char == "-" && isdigit(unparsed[i + 1]) && !isdigit(unparsed[i - 1]) && unparsed[i - 1] != ')')
+
+        else if(buffer.length() == 0 &&
+                current_char == "-" &&
+                isdigit(unparsed[i + 1]) &&
+                !isdigit(unparsed[i - 1]) &&
+                unparsed[i - 1] != ')')
         {
 
                 buffer += current_char;
@@ -54,7 +60,9 @@ std::vector<std::string> Parser::parse(std::string unparsed)
         }
         else
         {
-            if(buffer.size() == 0 && current_char != "(" && unparsed[i - 1] != ')')
+            if(buffer.size() == 0 &&
+               current_char != "(" &&
+               unparsed[i - 1] != ')')
             {
 
                 parsed = {"Operator mismatch"};

@@ -6,6 +6,8 @@
 #define CALCULATOR_CALCULATOR_H
 
 #include <string>
+
+#include "parser.h"
 #include "infix2postfix.h"
 #include "postfixeval.h"
 
@@ -16,13 +18,9 @@ class Calculator
         std::string evaluate(std::string input);
 
     private:
-        std::string stripspaces(const std::string input);
-        bool checkparentheses(const std::string input);
-        bool validateinput(std::string input);
         Infix2Postfix *infix;
         PostfixEval *result;
-
-
+        Parser *parser;
 
 };
 
