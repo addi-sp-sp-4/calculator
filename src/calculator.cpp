@@ -27,10 +27,7 @@ std::string Calculator::evaluate(std::string input)
     }
 
     std::vector<std::string> postfix = infix->evaluate(parsed);
-
-
-
-
+    
     return result->evaluate(postfix);
 
 

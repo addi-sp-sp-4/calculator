@@ -30,7 +30,8 @@ std::string PostfixEval::evaluate(std::vector<std::string> postfix)
 
         // If current char is a digit: push current char to operands
         // The if statement is a check for if the string is a number
-        if(current_char.find_first_not_of("0123456789.-") == std::string::npos)
+        // Also check if current char isn't just -
+        if(current_char.find_first_not_of("0123456789.-") == std::string::npos && current_char != "-")
         {
             operands.push(current_char);
 
