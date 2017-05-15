@@ -69,14 +69,7 @@ std::vector<std::string> Infix2Postfix::evaluate(std::vector<std::string> infix)
                 postfix.push_back(operators.top());
 
                 operators.pop();
-
-                /*
-                if(operators.empty())
-                {
-
-                    break;
-                }
-                 */
+                
             }
 
             operators.pop();
