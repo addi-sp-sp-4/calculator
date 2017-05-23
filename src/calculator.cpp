@@ -17,17 +17,17 @@ Calculator::Calculator()
 
 std::string Calculator::evaluate(std::string input)
 {
-
-    std::vector<std::string> parsed = parser->parse(input);
+    bool failed;
+    std::vector<std::string> parsed = parser->parse(input, failed);
 
     // Return if parsing failed
-    if(parsed[0] == "Operator Mismatch" || parsed[0] == "Empty input" || parsed[0] == "Invalid characters in input!" || parsed[0] == "Amount of '('s doesn't match amount of ')'s")
+    if(failed)
     {
         return parsed[0];
     }
 
     std::vector<std::string> postfix = infix->evaluate(parsed);
-    
+
     return result->evaluate(postfix);
 
 

@@ -14,11 +14,11 @@ Parser::Parser()
 
 }
 
-std::vector<std::string> Parser::parse(std::string unparsed)
+std::vector<std::string> Parser::parse(std::string unparsed, bool &failed)
 {
+    failed = false;
+
     std::vector<std::string> parsed;
-
-
 
     std::string buffer;
 
@@ -27,7 +27,7 @@ std::vector<std::string> Parser::parse(std::string unparsed)
     std::string returnment;
     if(!isvalidated(unparsed, returnment))
     {
-
+        failed = true;
         // Ugly
         parsed = {returnment};
         return parsed;
@@ -58,28 +58,44 @@ std::vector<std::string> Parser::parse(std::string unparsed)
                 buffer += current_char;
 
         }
+
+        // Is not number
         else
         {
-            if(buffer.size() == 0 &&
-               current_char != "(" &&
-               unparsed[i - 1] != ')')
+
+            // If first char is operator; exit
+            if(i == 0 && isoperator(unparsed[i]))
             {
+                failed = true;
 
                 parsed = {"Operator mismatch"};
                 return parsed;
             }
 
+            // If two operators after eachother
+            if(isoperator(unparsed[i]) && isoperator(unparsed[i+1]) && unparsed[i +1] != '-')
+            {
+                failed = true;
+
+                parsed = {"Operator mismatch"};
+                return parsed;
+            }
+
+
+            // add numbers to parsed
             if(buffer.size() != 0)
             {
                 parsed.push_back(buffer);
                 buffer.clear();
             }
+
             parsed.push_back(current_char);
         }
 
     }
     if(buffer.empty() && parsed.back() != ")")
     {
+        failed = true;
 
         parsed = {"Operator mismatch"};
         return parsed;
@@ -134,5 +150,24 @@ bool Parser::isvalidated(std::string input, std::string &message)
         message = "Amount of '('s doesn't match amount of ')'s";
         return false;
     }
+
+    // Return false
+    for(unsigned i = 0; i < input.size(); i++)
+    {
+        if(input[i] == '(')
+        {
+            if(input[i+1] == ')')
+            {
+                message = "Empty parentheses";
+                return false;
+            }
+        }
+    }
+
     return true;
+}
+
+bool Parser::isoperator(char input)
+{
+    return !isdigit(input) && input != '(' && input != ')';
 }

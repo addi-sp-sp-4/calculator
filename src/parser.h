@@ -12,10 +12,11 @@ class Parser
 {
     public:
         Parser();
-        std::vector<std::string> parse(std::string unparsed);
+        std::vector<std::string> parse(std::string unparsed, bool &failed);
     private:
         std::string stripspaces(std::string input);
         bool isvalidated(std::string input, std::string &message);
+        bool isoperator(char input);
 
 
 };
