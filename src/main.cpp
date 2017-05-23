@@ -20,11 +20,12 @@ int main(int argc, char *argv[])
     // Else
     else
     {
+        std::cout << "David's calculator:" << std::endl << std::endl;
         // Unless either quit, q, or exit is typed, ask for input and calculate the input, then cout it.
         while (true)
         {
 
-            std::cout << "Your input: ";
+
             std::getline(std::cin, input);
 
             if(input == "quit" || input == "q" || input == "exit")

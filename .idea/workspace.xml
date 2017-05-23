@@ -12,11 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6347a7bc-6b5c-453d-a4b1-509f19e19305" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/calculator.cpp" afterPath="$PROJECT_DIR$/src/calculator.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/parser.cpp" afterPath="$PROJECT_DIR$/src/parser.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/parser.h" afterPath="$PROJECT_DIR$/src/parser.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/postfixeval.cpp" afterPath="$PROJECT_DIR$/src/postfixeval.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Calculator.cbp" afterPath="$PROJECT_DIR$/Calculator.cbp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.cpp" afterPath="$PROJECT_DIR$/src/main.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/CMakeFiles/" />
@@ -40,10 +37,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="parser.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="parser.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/parser.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
+            <state relative-caret-position="577">
               <caret line="160" column="44" lean-forward="false" selection-start-line="160" selection-start-column="44" selection-end-line="160" selection-end-column="44" />
               <folding />
             </state>
@@ -54,17 +51,17 @@
         <entry file="file://$PROJECT_DIR$/src/postfixeval.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-306">
-              <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+              <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="13" column="9" lean-forward="false" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+            <state relative-caret-position="578">
+              <caret line="35" column="45" lean-forward="false" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -73,7 +70,7 @@
       <file leaf-file-name="infix2postfix.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/infix2postfix.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1989">
+            <state relative-caret-position="627">
               <caret line="117" column="29" lean-forward="false" selection-start-line="117" selection-start-column="29" selection-end-line="117" selection-end-column="29" />
               <folding />
             </state>
@@ -106,12 +103,12 @@
         <option value="$PROJECT_DIR$/postfixeval.cpp" />
         <option value="$PROJECT_DIR$/src/calculator.h" />
         <option value="$PROJECT_DIR$/src/infix2postfix.h" />
-        <option value="$PROJECT_DIR$/src/main.cpp" />
         <option value="$PROJECT_DIR$/src/infix2postfix.cpp" />
         <option value="$PROJECT_DIR$/src/postfixeval.cpp" />
         <option value="$PROJECT_DIR$/src/parser.h" />
         <option value="$PROJECT_DIR$/src/calculator.cpp" />
         <option value="$PROJECT_DIR$/src/parser.cpp" />
+        <option value="$PROJECT_DIR$/src/main.cpp" />
       </list>
     </option>
   </component>
@@ -410,12 +407,12 @@
       <workItem from="1494793920660" duration="280000" />
       <workItem from="1494869534017" duration="7426000" />
       <workItem from="1494877066820" duration="2337000" />
-      <workItem from="1495563034385" duration="2483000" />
+      <workItem from="1495563034385" duration="2925000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46154000" />
+    <option name="totallyTimeSpent" value="46596000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="31" width="1926" height="1131" extended-state="6" />
@@ -450,23 +447,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/calculator.cpp</url>
-          <line>21</line>
-          <option name="timeStamp" value="138" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/calculator.cpp</url>
-          <line>27</line>
-          <option name="timeStamp" value="139" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/calculator.cpp</url>
-          <line>29</line>
-          <option name="timeStamp" value="140" />
-        </line-breakpoint>
-      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
@@ -590,22 +570,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/infix2postfix.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1989">
-          <caret line="117" column="29" lean-forward="false" selection-start-line="117" selection-start-column="29" selection-end-line="117" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="13" column="9" lean-forward="false" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/parser.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -614,10 +578,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/parser.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="577">
+          <caret line="160" column="44" lean-forward="false" selection-start-line="160" selection-start-column="44" selection-end-line="160" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/postfixeval.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-306">
-          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/infix2postfix.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="117" column="29" lean-forward="false" selection-start-line="117" selection-start-column="29" selection-end-line="117" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -630,10 +610,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/parser.cpp">
+    <entry file="file://$PROJECT_DIR$/src/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="160" column="44" lean-forward="false" selection-start-line="160" selection-start-column="44" selection-end-line="160" selection-end-column="44" />
+        <state relative-caret-position="578">
+          <caret line="35" column="45" lean-forward="false" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
           <folding />
         </state>
       </provider>
